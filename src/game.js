@@ -1,12 +1,3 @@
-var square1;
-var square2;
-var square3;
-var square4;
-var square5;
-var square6;
-var square7;
-var square8;
-var square9;
 var player_1_move = true
 var player_2_move = false
 var array = [[],[],[]];
@@ -26,14 +17,30 @@ Tictac.prototype.choice = function(index1, index2) {
 
 Tictac.prototype.assignToSquare = function(number){
   if(player_1_move === true) {
-    $('#div'+number+'').text("x");
-    $('#div'+number+'').css("color", "red");
-    player_1_move = false
-    player_2_move = true
+    this.playerOneChoice(number)
+    this.playerOneSwitchTurn()
   }else if(player_2_move === true) {
-    $('#div'+number+'').text("o");
-    $('#div'+number+'').css("color", "blue");
-    player_1_move = true
-    player_2_move = false
+    this.playerTwoChoice(number)
+    this.playerTwoSwitchTurn()
   };
+};
+
+Tictac.prototype.playerTwoSwitchTurn = function() {
+  player_1_move = true
+  player_2_move = false
+};
+
+Tictac.prototype.playerOneSwitchTurn = function() {
+  player_1_move = false
+  player_2_move = true
+};
+
+Tictac.prototype.playerOneChoice = function(number) {
+  $('#div'+number+'').text("x");
+  $('#div'+number+'').css("color", "red");
+};
+
+Tictac.prototype.playerTwoChoice = function(number) {
+  $('#div'+number+'').text("o");
+  $('#div'+number+'').css("color", "blue");
 };

@@ -1,0 +1,8 @@
+.square{
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  margin: 5px;
+  float: left;
+  font-size: 60px;
+}

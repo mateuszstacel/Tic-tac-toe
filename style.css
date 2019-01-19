@@ -1,8 +1,26 @@
+body{
+  background-color: #267326;
+}
+#container
+{
+  text-align: center;
+}
 .square{
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background-color: gray;
   margin: 5px;
   float: left;
-  font-size: 60px;
+  font-size: 90px;
+}
+#grid
+{
+  margin-top: 5%
+}
+#new-game
+{
+  width: 10%;
+  color: yellow;
+  background-color: black;
+  border-radius: 3px;
 }

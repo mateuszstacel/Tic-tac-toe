@@ -1,8 +1,10 @@
 
 Tic-Tac-Toe Challenge
 =================
-How to run?
-- Clone the repo and open `index.html` to run the app locally.
+#### Deployed on Heroku
+
+[Heroku](https://bowlling-score-calculator.herokuapp.com/)
+
 
 ![Pictures of UI](tictac.png)
 

@@ -3,7 +3,8 @@ Tic-Tac-Toe Challenge
 =================
 #### Deployed on Heroku
 
-[Heroku](https://bowlling-score-calculator.herokuapp.com/)
+[Heroku](https://tic-tac--toe.herokuapp.com/)
+
 
 
 ![Pictures of UI](tictac.png)
